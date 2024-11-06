@@ -13,7 +13,9 @@ $(document).ready(() => {
   // - slideToggle the visibility of the .details section
 
   // Select the "Next Photo" button and add a click event to call showNextPhoto
-
+  $('#nextPhoto').on('click', () => {
+    swapPhoto;
+  });
   // Select the "Previous Photo" button and add a click event to call showPrevPhoto
 
   // Call fetchJSON() to load the initial set of images
@@ -31,7 +33,6 @@ function fetchJSON () {
       mImages = data.images
       
       $('#photo').attr('src', mImages[mCurrentIndex ].imgPath)
-
 
     }
   });
