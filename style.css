@@ -89,4 +89,5 @@ Make it animate nicely. You'll need CSS3 for this */
 Make it animate nicely. You'll need CSS3 for this */
 .rot270 {
     /* Add 270-degree rotation */
+    transform: rotate(90deg);
 }
